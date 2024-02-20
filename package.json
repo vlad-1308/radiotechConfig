@@ -1,13 +1,16 @@
 {
   "name": "uno-soft",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -f"
   },
   "dependencies": {
     "@babel/polyfill": "7.12.1",
